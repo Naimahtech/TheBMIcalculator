@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="BMI.css">
+  <!--javascript-->
+  <script type="text/javascript" src="bmi-calculator.js"></script>
+</head>
+<body>
+	<!--header-->
+
+<!--body-->
+<div class="row">
+  <div class="col-lg-4 col-md-3"></div>
+<!--left column ends-->
+
+  <div class="col-lg-6 col-md-8 col-sm-12"><h3>Calculate your BMI</h3><br>
+   <form role="form">
+   	<div class="row">
+  <div class="col-xs-6">
+    <input type="text" class="form-control" id="height" placeholder="enter your height" size="10" autofocus>
+    <select type="multiple" id="heightunits" class="form-control">
+        <option value="metres" selected="selected">metres</option>
+        <option value="inches">inches</option>
+    </select>
+  </div>
+</div>
+<p>
+ <div class="row">
+   <div class="col-xs-6">
+    <input type="text" class="form-control" id="weight" placeholder="enter your weight" width="10px" autofocus>
+    <select type="multiple" id="weightunits" class="form-control">
+        <option value="kg" selected="selected">kilograms</option>
+        <option value="lb">pounds</option>
+    </select>
+  </div>
+</div>
+</p>
+  <button type="button" class="btn btn-primary" onclick="computeBMI();">computeBMI</button>
+  <button class = "btn btn-danger " id="resetButton">Reset</button>
+  <br><br>
+  <h4><span id="output"></span></h4>
+                                
+  <h4><span id="comment"></span></h4> 
+</form>
+  </div>
+</div>
+</body>
+</html>
